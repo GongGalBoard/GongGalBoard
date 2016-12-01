@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../common/resources %>
+  </head>
+  <body>
+    <% include ../common/header %>
+    <div class="container post post-show">
+
+      <div class="buttons">
+        <a class="btn btn-default" href="/">뒤로가기</a>
+        <a class="btn btn-default" href="/edit/1">수정</a>
+        <a class="btn btn-default" href="#" onclick="confirm('정말로 삭제하시겠습니까?')?this.parentElement.submit():null;">삭제</a>
+      </div>
+
+      <div class="contentBox">
+        <h3 class="contentBoxTop">제목제목</h3>
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-8">
+            <div class="post-info">
+              <div><span>작성일</span> : 20161130 </div>
+            </div>
+          </div>
+          <div class="col-sm-8 col-sm-pull-4">
+            <div class="post-body">글 내용 입니다.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
